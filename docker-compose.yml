@@ -12,3 +12,7 @@ services:
     environment:
      - NAGIOSADMIN_USER=admin
      - NAGIOSADMIN_PASS=sinensia7
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+     - "9025:8025"
